@@ -56,6 +56,10 @@ body {
     color: var(--focus-color);
 }
 
+.anavigate.current {
+    color: var(--hover-color);
+}
+
 .a-mail {
     /* font-family: 'Roboto'; */
     font-weight: 500;
