@@ -3,11 +3,23 @@
     display: flex;
     margin: 0px 0px 94px 0px;
 } */
+:root {
+    --hover-color: #2196F3;
+    --focus-color: #2196F3;
+    --main-text-color: #212121;
+    --second-text-color: #757575;
+    --second-color-buttons: #ffffff;
+}
+
 
 body {
     font-family: 'Roboto', 'Raleway', sans-serif ;
-    color: #212121;
+    color: var(--main-text-color);
     font-style: normal;
+}
+
+.lists {
+    list-style: none;
 }
 
 .a-webstudio {
@@ -32,16 +44,16 @@ body {
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--main-text-color);
     text-decoration: none;
 }
 
 .anavigate:hover {
-    color: #2196F3;
+    color: var(--hover-color);
 }
 
 .anavigate:focus {
-    color: #2196F3;
+    color: var(--focus-color);
 }
 
 .a-mail {
@@ -55,9 +67,12 @@ body {
     text-decoration: none;
 }
 
-.a-mail:hover,
+.a-mail:hover {
+    color: var(--hover-color);
+}
+
 .a-mail:focus {
-    color: #2196F3;
+    color: var(--focus-color);
 }
 
 .a-tel {
@@ -71,9 +86,12 @@ body {
     text-decoration: none;
 }
 
-.a-tel:hover,
+.a-tel:hover {
+    color: var(--hover-color);
+}
+
 .a-tel:focus {
-    color: #2196F3;
+    color: var(--focus-color);
 }
 
 .h-one-forindex {
@@ -122,7 +140,7 @@ body {
     line-height: 1.1428;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: rgba (0, 0, 0, 0,);
+    color: var(--main-text-color);
 }
 
 .p-features {
@@ -131,7 +149,11 @@ body {
     font-size: 14px;
     line-height: 1.7142;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--second-text-color);
+}
+
+.ourteam {
+    background-color: #F5F4FA;
 }
 
 .h-for-names {
@@ -150,17 +172,11 @@ body {
     line-height: 1.1875;
     /* text-align: center; */
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--second-text-color);
 }
 
 .a-location {
     text-decoration: none;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7142;
-    letter-spacing: 0.03em;
-    color: #757575;
 }
 
 .aspanlocation {
@@ -174,13 +190,52 @@ body {
 }
 
 .aspanlocation:hover {
-    color: #2196F3;
+    color: var(--hover-color);
 }
 
 .aspanlocation:focus {
-    color: #2196F3;
+    color: var(--focus-color);
 }
 
+.mailfooter {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142;
+    letter-spacing: 0.03em;
+    /* color: rgba(255, 255, 255, 0.6); */
+    /* временно назначаю цвет текста ссылки серый, т.к. не видно на белом фоне серый текст с прозрачность 60%, когда задний фон будет темный, сделаю как надо */
+    color: #757575;
+}
+
+.mailfooter:hover {
+    color: var(--hover-color);
+}
+
+.mailfooter:focus {
+    color: var(--focus-color);
+}
+
+.telfooter {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142;
+    letter-spacing: 0.03em;
+    /* color: rgba(255, 255, 255, 0.6); */
+    /* временно назначаю цвет текста ссылки серый, т.к. не видно на белом фоне серый текст с прозрачность 60%, когда задний фон будет темный, сделаю как надо */
+    color: #757575;
+}
+
+.telfooter:hover {
+    color: var(--hover-color);
+}
+
+.telfooter:focus {
+    color: var(--focus-color);
+}
 
 
 
@@ -188,7 +243,7 @@ body {
 
 
 
-
+/* Кнопки портфолио */
 .portfoliobuttons {
     border: 0px;
     background-color: #F5F4FA;
@@ -200,7 +255,7 @@ body {
     line-height: 1.625;
     text-align: center;
     letter-spacing: 0.03em;
-    /* color: #212121; */
+    color: var(--main-text-color);
     cursor: pointer;
     height: 38px;
 }
@@ -226,20 +281,18 @@ width: 130px;
 }
 
 .portfoliobuttons:hover {
-    background-color: #2196F3;
-    color: #ffffff;
+    background-color: var(--hover-color);
+    color: var(--second-color-buttons);
 }
 
 .portfoliobuttons:focus {
-    background-color: #2196F3;
-    color: #ffffff;
+    background-color: var(--focus-color);
+    color: var(--second-color-buttons);
 }
 
 
 .h-two-portfolio {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -248,12 +301,10 @@ width: 130px;
 
 .pportfolio {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--second-text-color);
 }
 
 .cart {
