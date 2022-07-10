@@ -124,6 +124,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--third-text-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero-button {
@@ -142,6 +143,7 @@ body {
     width: 200px;
     height: 50px;
     cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
 /* Особенности */
@@ -186,7 +188,9 @@ body {
 
 .team {
     background-color: var(--bg-color-second);
+    
 }
+
 
 .team-title {
     font-size: 36px;
@@ -197,6 +201,12 @@ body {
 
 .team-list {
     list-style: none;
+
+}
+
+.team-list-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-names-title {
@@ -342,12 +352,14 @@ width: 130px;
 
 .filter-button:hover {
     background-color: var(--hover-color);
-    color: var(--second-text-color-buttons);
+    color: var(--second-text-color-buttons);    
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-button:focus {
     background-color: var(--focus-color);
     color: var(--second-text-color-buttons);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-cards {
@@ -356,6 +368,7 @@ width: 130px;
 
 .portfolio-card {
     text-decoration: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .card-title {
